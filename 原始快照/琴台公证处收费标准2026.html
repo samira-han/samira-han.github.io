@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>公示公告-武汉市琴台公证处</title>
+    <link rel="stylesheet" type="text/css" href="/css/pc2017/index.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pc2017/inside.css" />
+    <link rel="stylesheet" type="text/css" href="css/pc2017/from.css" />
+    <link rel="stylesheet" type="text/css" href="/iconfont/iconfont.css" />
+    <script type="text/javascript" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+    
+<!--header-->
+<div class="header">
+    <div class="wrap top f-cb">
+        <div class="logo fl">
+            <a href="index.aspx">
+                <img src="/images/pc2017/logo.png" alt="武汉琴台公证处"></a>
+        </div>
+        <div class="fr">
+            <div class="phone fl">
+                <div class="phone-img fl">
+                    <img src="/images/pc2017/phone.png" alt="">
+                </div>
+                <div class="phone-num fr">
+                    <div class="phone-num-t f-cb">
+                        <p class="txt fl">咨询电话</p>
+                        <p class="xt fr">
+                            <img src="images/pc2017/xt.png" alt="">
+                        </p>
+                    </div>
+                    <div class="phone-num-b">027-84811701  027-84515527  027-84899655</div>
+                </div>
+            </div>
+            <div class="form-group fl">
+                <input type="text" placeholder="请输入搜索关键字" class="f-input fl" id="txtkeys" />
+                <button class="f-but fl" id="btnsearch"><i class="iconfont icon-sousuo-sousuo"></i></button>
+
+                
+                <div class="member-center">
+                    <ul>
+                        <li><a href="/userlogin.aspx">登陆</a></li>
+                        <li><a href="/userreg.aspx">注册</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $("#btnsearch").click(function () {
+                        var keys = $("#txtkeys").val();
+                        if (keys.length == 0) {
+                            alert("请输入搜索关键字");
+                            return false;
+                        } else {
+                            location.href = "search.aspx?keys=" + keys;
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+<!--header-->
+<!--nav-->
+<div class="nav-wrap">
+    <div class="wrap page-menu">
+        <ul>
+            <li><a href="/index.aspx" >首页</a></li>
+            
+            <li ><a href="/single.aspx?ch_id=11&ca_id=25" >关于我们</a>
+                
+                <ul class="dropdown-menu categories">
+                    
+                    <li><a href="/single.aspx?ch_id=11&ca_id=25">机构介绍</a></li>
+                    
+                    <li><a href="/single.aspx?ch_id=11&ca_id=41">发展历程</a></li>
+                    
+                    <li><a href="/single.aspx?ch_id=11&ca_id=42">机构荣誉</a></li>
+                    
+                    <li><a href="/single.aspx?ch_id=11&ca_id=43">业务范围</a></li>
+                    
+                    <li><a href="/pros.aspx?ch_id=11&ca_id=44">公证人风采</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li ><a href="/news.aspx?ch_id=7&ca_id=45" >工作动态</a>
+                
+                <ul class="dropdown-menu categories">
+                    
+                    <li><a href="/news.aspx?ch_id=7&ca_id=45">工作动态</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li ><a href="/single.aspx?ch_id=10&ca_id=48" >办证指南</a>
+                
+                <ul class="dropdown-menu categories">
+                    
+                    <li><a href="/single.aspx?ch_id=10&ca_id=48">办证流程</a></li>
+                    
+                    <li><a href="/single.aspx?ch_id=10&ca_id=67">公证要求</a></li>
+                    
+                    <li><a href="/single.aspx?ch_id=10&ca_id=49">国内公证</a></li>
+                    
+                    <li><a href="/single.aspx?ch_id=10&ca_id=50">涉外和涉港澳台公证</a></li>
+                    
+                    <li><a href="/download.aspx?ch_id=10&ca_id=85">表格下载</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li ><a href="/single.aspx?ch_id=13&ca_id=88" >实时保</a>
+                
+            </li>
+            
+            <li ><a href="/news.aspx?ch_id=8&ca_id=54" class="active">公示公告</a>
+                
+                <ul class="dropdown-menu categories">
+                    
+                    <li><a href="/news.aspx?ch_id=8&ca_id=54">收费标准</a></li>
+                    
+                    <li><a href="/news.aspx?ch_id=8&ca_id=55">抵押登记</a></li>
+                    
+                    <li><a href="/news.aspx?ch_id=8&ca_id=56">撤证公告</a></li>
+                    
+                    <li><a href="/news.aspx?ch_id=8&ca_id=57">其他公示</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li ><a href="/reservation.aspx?ch_id=14&ca_id=59" >在线服务</a>
+                
+            </li>
+            
+            <li ><a href="/news.aspx?ch_id=9&ca_id=62" >法律资讯</a>
+                
+                <ul class="dropdown-menu categories">
+                    
+                    <li><a href="/news.aspx?ch_id=9&ca_id=62">公证案例</a></li>
+                    
+                    <li><a href="/news.aspx?ch_id=9&ca_id=70">法律法规</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li ><a href="/news.aspx?ch_id=17&ca_id=69" >社区服务</a>
+                
+            </li>
+            
+            <li style="background: none;"><a href="/single.aspx?ch_id=15&ca_id=64" >联系我们</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<!--nav-->
+
+    <div class="in-banner">
+        <div style="background: url(/upload/201706/12/201706121045365591.jpg) center top no-repeat; height: 396px;"></div>
+    </div>
+    <div class="in-container">
+        <div class="wrap">
+            <div class="in-wrap f-cb">
+                <div class="in-right-full fr">
+                    <div class="in-rig-title f-cb">
+                        <h5>收费标准</h5>
+                        <p class="bread"><i class="iconfont icon-ditu"></i><a href="index.aspx">首页</a> > <a href="single.aspx?ch_id=8">公示公告</a> > 收费标准</p>
+                    </div>
+                    <div class="article-title">武汉市琴台公证处公证服务收费标准（试行）</div>
+                    <div class="article-tips">发布时间：2026-04-06 &nbsp;&nbsp; 浏览次数：14832</div>
+                    <div class="article-text"><p class="MsoNormal" style="text-indent:32.0pt;">
+	<span style="font-size:16.0pt;font-family:仿宋_GB2312;color:black;"> </span>
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	根据《省发改委&nbsp;省司法厅关于完善我省公证服务收费政策的通知》（鄂发改价调〔2021〕<span>95</span>号）文件精神，结合我处公证工作实际，现将未实行政府定价的公证服务项目及收费标准公示如下：
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	<b>一、证明法律行为</b> 
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	<b>（一）</b>证明经济合同
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	1、证明土地使用权出让、转让、房屋转让、买卖及股权转让，按下列标准收取：
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	标的额500000元以下部分，收取比例为0.3%；按比例收费不到200元的，按200元收取；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	500001元至5000000元部分，收取0.25%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	5000001元至10000000元部分，收取0.2%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	10000001元至20000000元部分，收取0.15%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	20000001元至50000000元部分，收取0.1%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	50000001元至100000000元部分，收取0.05%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	l00000001元以上部分，收取0.01%。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	2、证明其他经济合同，按下列标准收取：
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	标的额20000元以下部分，收取比例为1%；按比例收费不到200元的，按200元收取；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	20001元至50000元部分，收取0.8%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	50001元至100000元部分，收取0.6%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	100001元至500000元部分，收取0.5%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	500001元至1000000元部分，收取0.4%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	1000001元至2000000元部分，收取0.3%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	2000001元至3000000元部分，收取0.2%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	3000001元至4000000元部分，收取0.1%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	4000001元以上部分，收取0.05%。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	（二）证明民事协议，每件收费200元；涉及财产的民事协议，每件收费400元起，其中财产数额较大的协议，与当事人协商收费。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	（三）证明委托、声明等单方法律行为的，每件收费200元；涉及财产转移、抵押、质押、注销抵押的，每件收费500元。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	（四）证明收养关系：
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	1、生父母共同送养的，每件收费450元；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	2、生父母单方送养的，每件收费750元；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	3、其他监护人送养的，每件收费1000元。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	<b>二、</b>证明对财产的清点、清算、评估和估损，按下列标准收取：
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	标的额500000元以下部分，收取比例为0.25%，按比例收费不到200元的，按200元收取；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	500001元至1000000元部分，收取0.2%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	1000001元至2000000元部分，收取0.15%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	2000001元至4000000元部分，收取0.1%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	4000001元至6000000元部分，收取0.05%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	6000001元至8000000元部分，收取0.02%；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	8000001元以上部分，收取0.01%。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	三、办理遗嘱、遗产方面公证，按下列标准收取：
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	1、遗嘱公证，每件收费1500元。在公证机构场所外办理遗嘱公证的，每件收费3000元。公证机构可根据法律关系的复杂程度、涉及财产的种类价值等因素，在标准之上与申请人协商确定公证费用。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	对75周岁以上的武汉市居民，首次办理公证遗嘱免收公证费。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	2、保管遗嘱，每件收费200元。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	3、确认遗嘱的效力，每件收费300元。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	4、清点、保管遗产，按证明财产继承、赠与和遗赠的标准收取。
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	四、提存公证，按标的额的0.3%收取，最低收取500元。因提存产生的公告、保管、送达、鉴定等相关费用由申请人另行支付。
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	五、保全证据公证，保全地点在公证机构办公场所内的，每件收费1000元起。保全地点在公证机构办公场所外的，每件收费2<span>0</span>00元起。公证机构可根据工作时长、工作量及工作难易度等，在标准之上与申请人协商确定公证费用。
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	六、现场监督公证，每件收费2<span>0</span>00元起。公证机构可根据工作时长、工作量及工作难易度等，在标准之上与申请人协商确定公证费用。
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	七、采用线上远程视频电子签名方式办理公证，按件收取技术服务费2000元。
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	八、生前医疗预嘱公证，每件收费1<span>5</span>00元起。意定监护公证，每件收费<span>3</span>000元起。公证机构可根据沟通时间、案件种类、复杂程度等因素，在标准之上与申请人协商确定公证费用。
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	九、办理用于遗产继承的亲属关系公证，按证明财产继承的标准减半收费。
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	十、其它公证服务项目：
+</p>
+<p class="p" style="text-indent:39.2500pt;background:#FFFFFF;">
+	1、证明产权（不含知识产权），每件收费400元。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	2、证明宅基地使用权，每件收费80元。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	3、法律意见书，每件收费1000元起。公证机构可根据法律关系的复杂程度、涉及财产的价值等因素，在标准之上与申请人协商确定公证费用。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	4、提供常年公证法律服务，协商收费。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	5、提存、登记、保管文书、公证加急<span>服务</span><span>,每件</span>100元；
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	6、代拟和修改与公证事项相关的法律文书，每件80元起。公证机构可根据代拟的合同、协议等文书的复杂程度、涉及财产的价值等因素，在标准之上与申请人协商确定公证费用。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	7、提供公证法律咨询，每件20元（民事事项免收）。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	8<span>、上门服务费：江岸区、江汉区、硚口区、武昌区、洪山区、青山区、汉阳区收取上门费</span><span>400元/次；上述区域以外的武汉其他区域，收取上门费500元/次；到监狱、看守所等特殊场所或武汉市外上门办证的，与当事人协商收费。对确有经济困难的当事人，提供预约免费上门服务。</span> 
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	9、查询公证档案并复印材料的，按照公证书编号每份公证书收取20元。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	10、委托公证机构调查，参照前述上门服务费的标准收费。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	十、对已受理的公证事项，申请人要求撤回的，已经审查的，按照该公证事项收费标准的50%收取。因当事人隐瞒事实或提供虚假材料等原因导致无法出具公证书的，已经收取的公证费不予退还。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	十一、涉外翻译费：公证词英文翻译80元/件，小语种翻译、证件等材料翻译以翻译公司收费为标准。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	十二、公证事项若需增加公证书份数的，涉外、涉港澳台公证收费40<span>元</span><span>/件，保全证据、现场监督类公证收费100元/件，其他国内公证收费</span>20<span>元</span><span>/件。</span> 
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	十三、公证服务过程中发生的，因公证机构自身无法提供的专业鉴定、检验检测、评估、邮寄、核实等费用，以实际产生费用为准另行收取。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	十四、未尽事宜，由公证处与当事人协商解决。
+</p>
+<p class="p" style="text-indent:40.2000pt;background:#FFFFFF;">
+	十五、本收费标准自202<span>6</span>年<span>4</span>月<span>6</span>日起实施。
+</p>
+<p class="MsoNormal">
+	&nbsp;
+</p>
+<p class="MsoNormal">
+	&nbsp;
+</p>
+<p class="MsoNormal">
+	&nbsp;
+</p>
+<p class="p">
+	&nbsp;
+</p>
+<p>
+	<br />
+</p>
+<p class="MsoNormal" align="right" style="text-align:right;text-indent:32.0pt;">
+	<span style="font-size:16.0pt;font-family:仿宋_GB2312;color:black;"></span><span style="font-size:16.0pt;font-family:宋体;color:black;"></span><span style="font-size:16.0pt;font-family:仿宋_GB2312;color:black;"><span><span>&nbsp;&nbsp; </span></span></span><span style="color:black;"><span>&nbsp;</span></span><span style="font-size:16.0pt;font-family:仿宋_GB2312;color:black;"></span> 
+</p>
+<br /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="links">
+    <div class="wrap f-cb">
+        <div class="links-title fl">友情链接</div>
+        <div class="links-list fl">
+            
+            <a href="http://sfj.wuhan.gov.cn/">武汉司法行政网</a>
+            
+            <a href="http://www.chinanotary.org.cn/">中国公证网</a>
+            
+            <a href="http://sft.hubei.gov.cn/">湖北省司法厅</a>
+            
+        </div>
+    </div>
+</div>
+<div class="wrap m-contact f-cb">
+    <div class="map fl">
+        <img src="/upload/201801/02/201801021640023993.jpg" alt="地图" />
+    </div>
+    <div class="contact-list fr">
+        <div class="c-list-strip">
+            <h3>总部</h3>
+            <p>办公地址：武汉市汉阳区王家湾中央生活区1号楼中央之星8楼</p>
+<p>办公电话：027-84811701</p>
+        </div>
+        <div class="c-list-strip">
+            <h3>钟家村办事处</h3>
+            <p>办公地址：武汉市汉阳区翠微路特1号宏阳大厦10楼</p>
+<p>办公电话：027-84515527</p>
+        </div>
+        <div class="c-list-strip">
+            <h3>沌口办事处</h3>
+            <p>办公地址：武汉经济技术开发区东风三路东合中心D栋701</p>
+<p>咨询电话：027-84899655</p>
+        </div>
+    </div>
+</div>
+    
+<div class="copy">
+    <div class="wrap f-cb">
+        <div class="fl">版权所有：武汉市琴台公证处   备案号：<a href="https://beian.miit.gov.cn/"target="_blank"style="color:#666;">鄂ICP备09029211号-2</a></div>
+        <div class="fr">
+            技术支持：<a href="http://www.whnewnet.com" target="_blank">武汉新网科技</a>
+        </div>
+    </div>
+</div>
+<div style="position: fixed; bottom: 0; right: 0;">
+    <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/18/269/0000/40530944/CA182690000405309440001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+<script type="text/javascript" src="/scripts/pc2017/online.js"></script>
+<!--pf-->
+<ul id="side-bar" class="side-pannel side-bar">
+    <a href="javascript:;" class="gotop" style="display: none; padding-top: 20px; margin-top: 15px;"><s class="g-icon-top"></s></a>
+    <a href="" target="_blank" class="text"><s class="g-icon-qq1"></s><span>在线办证</span></a>
+    <a href="" target="_blank" class="text weibo"><s class="g-icon-weibo1"></s><span>在线咨询</span></a>
+    <a href="" class="text survey" target="_blank"><s class="g-icon-survey1"></s><span>在线预约</span></a>
+    <a href="javascript:;" class="qr"><s class="g-icon-qr1"></s><span>关注我们</span><i></i></a>
+</ul>
+<!--pf-->
+
+</body>
+</html>
